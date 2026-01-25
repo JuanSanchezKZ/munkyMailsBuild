@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMTP Pro Mailer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        /* Estilos para el placeholder del editor contentEditable */
+        [data-placeholder]:empty:before {
+            content: attr(data-placeholder);
+            color: #cbd5e1; /* slate-300 */
+            cursor: text;
+        }
+        .dark [data-placeholder]:empty:before {
+            color: #334155; /* slate-700 */
+        }
+
+        /* Estilos para impresión (Exportar a PDF) */
+        @media print {
+            aside, .no-print, button, input, .search-bar-container {
+                display: none !important;
+            }
+            main {
+                margin: 0 !important;
+                padding: 0 !important;
+                width: 100% !important;
+            }
+            .max-w-4xl {
+                max-width: 100% !important;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th, td {
+                border: 1px solid #e2e8f0;
+                padding: 8px;
+                text-align: left;
+                font-size: 10pt;
+            }
+            .dark {
+                background: white !important;
+                color: black !important;
+            }
+            .print-only {
+                display: block !important;
+            }
+        }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-C7Pch3Fj.js"></script>
+</head>
+<body class="transition-colors duration-300">
+    <div id="root"></div>
+</body>
+</html>
